@@ -1,0 +1,19 @@
+FDC VPN Client Installation Guide for Checkpoint Client
+3. You will then be given an 8-digit code. This number will change every 60 seconds and will act as
+your password for logging into Checkpoint VPN Client.
+Nosemoee 6mm /@ -'
+Time~Based Passcode for:
+secureauth.fdc.ib!ém ®
+4. Now enter the 8—digit code into Check Point in the ”Password” field. Your ”Username” will be
+your user ID that you received previously.
+«‘ij TrGUI #
+ll gmmeam ﬂow 1
+. ‘ . _. ”Mm; .319 .. >1;
+/;
+Site: hpnbldjdcjbmmom / V ] '
+Authentication .
+Please enter your credentials: 4Q;
+Username: [I / ’ﬁ 9 /./-_ '_1
+Password: [ ‘ ] )_ L f ‘
+. \5 C.
+[ Connect ] [ Cancel ] [ Help ]

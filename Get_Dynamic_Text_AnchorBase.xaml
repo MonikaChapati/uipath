@@ -1,0 +1,102 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Get_Dynamic_Text_AnchorBase" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="688.666666666667,707.333333333333" sap2010:WorkflowViewState.IdRef="Get_Dynamic_Text_AnchorBase_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="21">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Get_Dynamic_Text_AnchorBase" sap:VirtualizedContainerService.HintSize="426,542.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="InvoiceAmt" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:AnchorBase AnchorPosition="Top" DisplayName="Anchor Base" sap:VirtualizedContainerService.HintSize="384,352" sap2010:WorkflowViewState.IdRef="AnchorBase_1">
+      <ui:AnchorBase.Action>
+        <ActivityAction x:TypeArguments="ui:Anchor">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:Anchor" Name="ContextAnchor" />
+          </ActivityAction.Argument>
+          <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text 'text  Rs.48,780.0'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetFullText_1">
+            <ui:GetFullText.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="934e2fc6-d864-46ef-a9d7-76d06c300ac4" InformativeScreenshot="a6b658d4bba1dbe602bd9776a6629e64" Selector="&lt;ctrl role='text' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:GetFullText.Target>
+            <ui:GetFullText.Text>
+              <OutArgument x:TypeArguments="x:String">[InvoiceAmt]</OutArgument>
+            </ui:GetFullText.Text>
+          </ui:GetFullText>
+        </ActivityAction>
+      </ui:AnchorBase.Action>
+      <ui:AnchorBase.AnchorProvider>
+        <ui:WaitImageAppear FoundElement="{x:Null}" DisplayName="Find Image 'AcroRd32.exe Invoice'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="WaitImageAppear_1">
+          <ui:WaitImageAppear.Image>
+            <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="1.5" Profile="Basic" TargetImageBase64="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" />
+          </ui:WaitImageAppear.Image>
+          <ui:WaitImageAppear.Target>
+            <ui:Target Element="{x:Null}" Id="c0bf9392-4aac-4a07-8931-52613b7ff9e8" Selector="&lt;wnd app='acrord32.exe' cls='AcrobatSDIWindow' title='Invoice *- Adobe Acrobat Reader DC' /&gt;&lt;wnd aaname='Document Pane' cls='AVL_AVView' title='AVScrolledPageView' /&gt;&lt;wnd cls='AVL_AVView' title='AVPageView' /&gt;">
+              <ui:Target.ClippingRegion>
+                <ui:Region Rectangle="775, 342, 136, 22" />
+              </ui:Target.ClippingRegion>
+              <ui:Target.TimeoutMS>
+                <InArgument x:TypeArguments="x:Int32" />
+              </ui:Target.TimeoutMS>
+              <ui:Target.WaitForReady>
+                <InArgument x:TypeArguments="ui:WaitForReady" />
+              </ui:Target.WaitForReady>
+            </ui:Target>
+          </ui:WaitImageAppear.Target>
+        </ui:WaitImageAppear>
+      </ui:AnchorBase.AnchorProvider>
+    </ui:AnchorBase>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="384,58.6666666666667" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[InvoiceAmt]" />
+  </Sequence>
+</Activity>
